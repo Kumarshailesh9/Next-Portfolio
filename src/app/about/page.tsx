@@ -9,7 +9,7 @@ export default function AboutPage() {
 
         {/* Intro */}
         <p className="text-base md:text-lg leading-relaxed text-slate-700 mb-6">
-          Hello! I&aposm <span className="font-semibold text-gray-600">Shailesh Kumar</span>,  
+          Hello! I&apos;m <span className="font-semibold text-gray-600">Shailesh Kumar</span>,  
           a passionate <span className="font-medium">MERN Stack Developer</span> from Noida, India.  
           I love building dynamic, user-friendly web applications using modern technologies like  
           <span className="font-medium"> React, Node.js, Express,</span> and <span className="font-medium">MongoDB</span>.
@@ -17,7 +17,7 @@ export default function AboutPage() {
 
         {/* Journey */}
         <p className="text-base md:text-lg leading-relaxed text-slate-700 mb-6">
-          I completed my B.Tech in Computer Science & Engineering from  
+          I completed my B.Tech in Computer Science &amp; Engineering from  
           <span className="font-medium"> Awadh University, Ayodhya</span> in 2022.  
           During my training at <span className="font-medium">Sharpener</span>, I learned full-stack web development 
           and built several real-world projects, including an Expense Tracker App and a Portfolio Website.
@@ -26,8 +26,8 @@ export default function AboutPage() {
         {/* Goal */}
         <p className="text-base md:text-lg leading-relaxed text-slate-700 mb-10">
           My goal is to create impactful digital products that solve real-world problems.  
-          I’m particularly interested in backend architecture, API integration, and scalable systems.  
-          When I’m not coding, I enjoy playing games, writing tech blogs, and traveling.
+          I&apos;m particularly interested in backend architecture, API integration, and scalable systems.  
+          When I&apos;m not coding, I enjoy playing games, writing tech blogs, and traveling.
         </p>
 
         {/* Tech Stack Section */}
