@@ -9,7 +9,7 @@ export default function AboutPage() {
 
         {/* Intro */}
         <p className="text-base md:text-lg leading-relaxed text-slate-700 mb-6">
-          Hello! I'm <span className="font-semibold text-gray-600">Shailesh Kumar</span>,  
+          Hello! I&aposm <span className="font-semibold text-gray-600">Shailesh Kumar</span>,  
           a passionate <span className="font-medium">MERN Stack Developer</span> from Noida, India.  
           I love building dynamic, user-friendly web applications using modern technologies like  
           <span className="font-medium"> React, Node.js, Express,</span> and <span className="font-medium">MongoDB</span>.
