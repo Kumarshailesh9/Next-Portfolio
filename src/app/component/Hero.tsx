@@ -10,7 +10,7 @@ export default function Hero() {
       {/* Left side content */}
       <div className="md:w-1/2 text-center md:text-left">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-600 mb-4">
-          Hi, I'm Shailesh Kumar
+          Hello! I&apos;m Shailesh Kumar
         </h1>
 
         <h2 className="text-2xl md:text-3xl font-semibold text-indigo-600 mb-4">
