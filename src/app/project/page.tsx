@@ -19,6 +19,14 @@ export default function ProjectPage() {
       liveLink: "https://kumarshailesh9.github.io/portfolio/",
     },
     {
+      title: "Mini Store E-commerce App",
+      description:
+        "A full-featured e-commerce application built with Next.js and Redux Toolkit. Users can browse products, filter by category, search items, add products to the cart, and view total prices. The app includes real-time state management using Redux Toolkit and a responsive UI with Tailwind CSS.",
+      tech: ["Next.js", "React", "Redux Toolkit", "Tailwind CSS", "Fakestore API"],
+      githubLink: "https://github.com/Kumarshailesh9/mini-store",
+      liveLink: "https://mini-store-jgy2.vercel.app/", 
+    },
+    {
       title: "Blog Writing Platform",
       description:
         "A web app that allows users to write, edit, and publish blogs. Focused on clean UI, CRUD operations, and user authentication.",
