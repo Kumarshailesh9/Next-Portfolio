@@ -1,4 +1,7 @@
 import Link from "next/link";
+import {GithubOriginal, LinkedinOriginal, TwitterOriginal} from "devicons-react";
+import {FaYoutube, FaInstagramSquare } from "react-icons/fa"
+
 
 export default function Footer() {
   return (
@@ -12,11 +15,11 @@ export default function Footer() {
 
         {/* Footer Links */}
         <ul className="flex flex-wrap gap-4 text-sm text-slate-600">
-          <li><Link href="/" className="hover:text-gray-600">Home</Link></li>
-          <li><Link href="/about" className="hover:text-gray-600">About</Link></li>
-          <li><Link href="/project" className="hover:text-gray-600">Projects</Link></li>
-          <li><Link href="/skill" className="hover:text-gray-600">Skills</Link></li>
-          <li><Link href="/contact" className="hover:text-gray-600">Contact</Link></li>
+          <li><Link href="https://github.com/Kumarshailesh9" className="hover:text-gray-600"><GithubOriginal size={18} /></Link></li>
+          <li><Link href="http://linkedin.com/in/shailesh921" className="hover:text-gray-600"><LinkedinOriginal size={16} /></Link></li>
+          <li><Link href="" className="hover:text-gray-600"><TwitterOriginal size={14} /></Link></li>
+          <li><Link href="" className="hover:text-gray-600"><FaYoutube size={18} color="red" /></Link></li>
+          <li><Link href="" className="hover:text-gray-600"><FaInstagramSquare size={16} color="pink"/></Link></li>
         </ul>
       </div>
     </footer>

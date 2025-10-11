@@ -12,6 +12,7 @@ export default function Navbar() {
     { href: "/about", label: "About" },
     { href: "/project", label: "Projects" },
     { href: "/skill", label: "Skills" },
+    { href: "/experience", label: "Experience" },
     { href: "/contact", label: "Contact" },
   ];
 
