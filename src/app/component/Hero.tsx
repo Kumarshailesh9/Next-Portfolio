@@ -45,12 +45,14 @@ export default function Hero() {
         </p>
 
         <div className="flex justify-center md:justify-start gap-4">
-          <Link
-            href="/project"
-            className="bg-gray-600 text-white px-6 py-2 rounded-md hover:bg-gray-700 transition"
+          <a
+            href="/Shailesh_Kumar_Resume.pdf"
+            download="Shailesh_Kumar_Resume.pdf"
+            className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition"
           >
-            View Projects
-          </Link>
+            Download Resume
+          </a>
+
           <Link
             href="/contact"
             className="bg-gray-200 text-slate-800 px-6 py-2 rounded-md hover:bg-gray-300 transition"
