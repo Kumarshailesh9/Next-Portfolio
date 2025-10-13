@@ -3,49 +3,90 @@
 import { useState } from "react";
 
 export default function ContactForm() {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState<string | null>(null);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert(`Message sent!\n\nName: ${form.name}\nEmail: ${form.email}\nMessage: ${form.message}`);
-    setForm({ name: "", email: "", message: "" });
+    setLoading(true);
+    setSuccess(null);
+
+    const res = await fetch("/api/sendMail", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    setLoading(false);
+    if (res.ok) {
+      setSuccess("✅ Message sent successfully!");
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      setSuccess("❌ Failed to send message. Try again later.");
+    }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+    <form
+      onSubmit={handleSubmit}
+      className="bg-white shadow-xl rounded-2xl p-8 max-w-lg mx-auto space-y-6 border border-gray-100"
+    >
+      <h2 className="text-2xl font-bold text-center text-gray-800">
+        Get in Touch
+      </h2>
+
       <input
         type="text"
         name="name"
-        value={form.name}
-        onChange={handleChange}
         placeholder="Your Name"
-        className="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-gray-600"
         required
+        value={formData.name}
+        onChange={handleChange}
+        className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
+
       <input
         type="email"
         name="email"
-        value={form.email}
-        onChange={handleChange}
         placeholder="Your Email"
-        className="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-gray-600"
         required
+        value={formData.email}
+        onChange={handleChange}
+        className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
+
       <textarea
         name="message"
-        value={form.message}
-        onChange={handleChange}
         placeholder="Your Message"
-        className="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-gray-600 resize-none h-32"
+        rows={4}
         required
+        value={formData.message}
+        onChange={handleChange}
+        className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
-      <button type="submit" className="bg-gray-600 text-white rounded-md py-3 hover:bg-gray-700 transition">
-        Send Message
+
+      <button
+        type="submit"
+        disabled={loading}
+        className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition-all duration-300"
+      >
+        {loading ? "Sending..." : "Send Message"}
       </button>
+
+      {success && (
+        <p className="text-center text-sm text-gray-700 mt-2">{success}</p>
+      )}
     </form>
   );
 }
