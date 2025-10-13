@@ -65,10 +65,10 @@ export default function Hero() {
         <Image
           src="/Profile.jpeg"
           alt="Shailesh Kumar"
-          width={500}
-          height={500}
+          width={400}
+          height={400}
           priority
-          className="rounded-full w-60 h-60 object-cover shadow-lg"
+          className="rounded-full mt-22 object-cover shadow-lg"
         />
       </div>
     </section>

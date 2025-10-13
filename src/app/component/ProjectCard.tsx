@@ -48,14 +48,22 @@ export default function ProjectCard({
           <span>GitHub Repo</span>
         </Link>
 
-        <Link
-          href={liveLink}
-          target="_blank"
-          className="flex items-center gap-1 text-gray-600 font-medium hover:text-gray-800 transition-colors"
-        >
-          {/* You can use a live icon or just text */}
-          <span>Live Demo</span>
-        </Link>
+         {liveLink ? (
+          <Link
+            href={liveLink}
+            target="_blank"
+            className="bg-green-800 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-green-700 transition-colors"
+          >
+            Live Demo
+          </Link>
+        ) : (
+          <button
+            disabled
+            className="bg-gray-300 text-gray-600 text-sm font-medium px-4 py-2 rounded-lg cursor-not-allowed"
+          >
+            Live Soon
+          </button>
+        )}
       </div>
     </div>
   );
