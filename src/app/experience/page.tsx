@@ -45,7 +45,7 @@ export default function ExperiencePage() {
       <h1 className="text-4xl font-bold mb-12 text-center">My Experience</h1>
       <div className="relative max-w-4xl mx-auto">
         {/* Vertical Line */}
-        <div className="absolute left-5 top-0 w-1 bg-blue-500 h-full hidden md:block"></div>
+        <div className="absolute left-5 top-0 w-1 background1 h-full hidden md:block"></div>
         
         {experiences.map((exp, index) => (
           <div
@@ -53,7 +53,7 @@ export default function ExperiencePage() {
             className={`mb-10 relative md:pl-16 pl-8`}
           >
             {/* Circle */}
-            <div className="absolute left-0 md:left-0 top-1 w-4 h-4 bg-blue-500 rounded-full"></div>
+            <div className="absolute left-0 md:left-0 top-1 w-4 h-4 background1 rounded-full"></div>
             
             <h2 className="text-2xl font-semibold">{exp.role}</h2>
             {exp.company && <p className="text-gray-600">{exp.company}</p>}

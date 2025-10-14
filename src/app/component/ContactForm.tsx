@@ -53,7 +53,7 @@ export default function ContactForm() {
         required
         value={formData.name}
         onChange={handleChange}
-        className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-700"
       />
 
       <input
@@ -63,7 +63,7 @@ export default function ContactForm() {
         required
         value={formData.email}
         onChange={handleChange}
-        className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-700"
       />
 
       <textarea
@@ -73,13 +73,13 @@ export default function ContactForm() {
         required
         value={formData.message}
         onChange={handleChange}
-        className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-700"
       />
 
       <button
         type="submit"
         disabled={loading}
-        className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition-all duration-300"
+        className="w-full background1 hover:bg-green-700 text-white font-semibold py-3 rounded-lg transition-all duration-300"
       >
         {loading ? "Sending..." : "Send Message"}
       </button>

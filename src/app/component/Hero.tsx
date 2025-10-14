@@ -13,9 +13,9 @@ export default function Hero() {
           Hello! I&apos;m Shailesh Kumar
         </h1>
 
-        <h2 className="text-2xl md:text-3xl font-semibold text-indigo-600 mb-4">
+        <h2 className="text-2xl md:text-3xl font-semibold text-green-900 mb-4">
           I am a{" "}
-          <span className="text-indigo-600">
+          <span className="text-green-800">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -48,14 +48,14 @@ export default function Hero() {
           <a
             href="/Shailesh_Kumar_Resume.pdf"
             download="Shailesh_Kumar_Resume.pdf"
-            className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition"
+            className="background1 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition"
           >
             Download Resume
           </a>
 
           <Link
             href="/contact"
-            className="bg-gray-200 text-slate-800 px-6 py-2 rounded-md hover:bg-gray-300 transition"
+            className="background1 text-white px-6 py-2 rounded-md hover:bg-gray-300 transition"
           >
             Contact Me
           </Link>

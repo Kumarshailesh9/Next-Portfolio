@@ -52,7 +52,7 @@ export default function ProjectCard({
           <Link
             href={liveLink}
             target="_blank"
-            className="bg-green-800 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-green-700 transition-colors"
+            className="background1 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-green-700 transition-colors"
           >
             Live Demo
           </Link>

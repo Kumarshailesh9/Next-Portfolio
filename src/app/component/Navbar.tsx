@@ -17,13 +17,13 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-      <div className="container mx-auto flex items-center justify-between px-4 py-3 lg:py-4 text-slate-800">
+    <nav className="fixed top-0 left-0 w-full background1 shadow-md z-50">
+      <div className="container mx-auto flex items-center justify-between px-4 py-3 lg:py-4 text-white">
         
         {/* Logo / Brand */}
         <Link
           href="/"
-          className="text-lg md:text-xl font-semibold tracking-wide hover:text-gray-600 transition-colors whitespace-nowrap"
+          className="text-lg md:text-xl font-semibold tracking-wide hover:size-bold transition-colors whitespace-nowrap"
         >
           Shailesh Kumar
         </Link>
@@ -34,7 +34,7 @@ export default function Navbar() {
             <li key={href}>
               <Link
                 href={href}
-                className="text-slate-700 hover:text-gray-600 transition-colors"
+                className="text-white hover:text-gray-600 transition-colors"
               >
                 {label}
               </Link>
@@ -51,7 +51,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu Dropdown */}
       {isOpen && (
         <div className="lg:hidden bg-white shadow-md">
           <ul className="flex flex-col items-center space-y-3 py-4 text-sm font-medium">

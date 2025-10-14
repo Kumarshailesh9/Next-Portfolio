@@ -5,12 +5,12 @@ import {FaYoutube, FaInstagramSquare } from "react-icons/fa"
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white border-t shadow-inner mt-20">
-      <div className="container mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between text-slate-700">
+    <footer className="w-full background1 border-t shadow-inner mt-20">
+      <div className="container mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between text-white">
         {/* Left Section */}
         <h2 className="text-sm font-semibold mb-3 md:mb-0">
           © {new Date().getFullYear()} Developed by{" "}
-          <span className="text-gray-600 font-bold">Shailesh Kumar</span>
+          <span className="text-white font-bold">Shailesh Kumar</span>
         </h2>
 
         {/* Footer Links */}
