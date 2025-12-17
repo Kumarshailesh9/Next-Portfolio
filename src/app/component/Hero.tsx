@@ -6,10 +6,10 @@ import Typewriter from "typewriter-effect";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 bg-gray-50">
+    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 bg-gray-50 pt-20">
       {/* Left side content */}
       <div className="md:w-1/2 text-center md:text-left">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-600 mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-600 mb-4 ">
           Hello! I&apos;m Shailesh Kumar
         </h1>
 
