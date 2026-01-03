@@ -18,14 +18,14 @@ export default function ProjectPage() {
       githubLink: "https://github.com/Kumarshailesh9/Next-Portfolio.git",
       liveLink: "https://shaileshkumar.vercel.app/",
     },
-    {
-      title: "Mini Store E-commerce App",
-      description:
-        "A full-featured e-commerce application built with Next.js and Redux Toolkit. Users can browse products, filter by category, search items, add products to the cart, and view total prices. The app includes real-time state management using Redux Toolkit and a responsive UI with Tailwind CSS.",
-      tech: ["Next.js", "React", "Redux Toolkit", "Tailwind CSS", "Fakestore API"],
-      githubLink: "https://github.com/Kumarshailesh9/mini-store",
-      liveLink: "https://mini-store-jgy2.vercel.app/",
-    },
+    // {
+    //   title: "Mini Store E-commerce App",
+    //   description:
+    //     "A full-featured e-commerce application built with Next.js and Redux Toolkit. Users can browse products, filter by category, search items, add products to the cart, and view total prices. The app includes real-time state management using Redux Toolkit and a responsive UI with Tailwind CSS.",
+    //   tech: ["Next.js", "React", "Redux Toolkit", "Tailwind CSS", "Fakestore API"],
+    //   githubLink: "https://github.com/Kumarshailesh9/mini-store",
+    //   liveLink: "https://mini-store-jgy2.vercel.app/",
+    // },
     {
       title: "Event Booking App",
       description:
